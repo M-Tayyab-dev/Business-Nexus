@@ -1,0 +1,995 @@
+{
+  service: 'nexus-backend',
+  message: 'Database connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017',
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 1720282,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 1720282,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at _handleConnectionErrors (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1169:11)\n' +
+    '    at NativeConnection.openUri (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1100:11)\n' +
+    '    at async connectDB (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/src/config/database.js:6:18)\n' +
+    '    at async startServer (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/server.js:182:5)',
+  timestamp: '2026-03-27 11:48:37'
+}
+{
+  service: 'nexus-backend',
+  message: 'Database connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017',
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 2571848,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 2571848,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at _handleConnectionErrors (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1169:11)\n' +
+    '    at NativeConnection.openUri (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1100:11)\n' +
+    '    at async connectDB (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/src/config/database.js:6:18)\n' +
+    '    at async startServer (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/server.js:182:5)',
+  timestamp: '2026-03-27 12:02:49'
+}
+{
+  service: 'nexus-backend',
+  message: 'Database connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017',
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 2673371,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 2673371,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at _handleConnectionErrors (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1169:11)\n' +
+    '    at NativeConnection.openUri (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1100:11)\n' +
+    '    at async connectDB (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/src/config/database.js:6:18)\n' +
+    '    at async startServer (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/server.js:182:5)',
+  timestamp: '2026-03-27 12:04:30'
+}
+{
+  service: 'nexus-backend',
+  message: 'Database connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017',
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 3033582,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 3033582,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at _handleConnectionErrors (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1169:11)\n' +
+    '    at NativeConnection.openUri (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1100:11)\n' +
+    '    at async connectDB (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/src/config/database.js:6:18)\n' +
+    '    at async startServer (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/server.js:182:5)',
+  timestamp: '2026-03-27 12:10:31'
+}
+{
+  service: 'nexus-backend',
+  message: 'Database connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017',
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 3260924,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 3260924,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at _handleConnectionErrors (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1169:11)\n' +
+    '    at NativeConnection.openUri (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1100:11)\n' +
+    '    at async connectDB (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/src/config/database.js:6:18)\n' +
+    '    at async startServer (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/server.js:182:5)',
+  timestamp: '2026-03-27 12:14:18'
+}
+{
+  service: 'nexus-backend',
+  message: 'Database connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017',
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 3473485,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 3473485,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> (E:\New folder (3)\Nexus-main\Nexus-main\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:623:26)
+            at Socket.emit (node:events:508:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1134:18)
+              at afterConnectMultiple (node:net:1715:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1678:14)
+                  at afterConnectMultiple (node:net:1708:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at _handleConnectionErrors (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1169:11)\n' +
+    '    at NativeConnection.openUri (E:\\New folder (3)\\Nexus-main\\Nexus-main\\backend\\node_modules\\mongoose\\lib\\connection.js:1100:11)\n' +
+    '    at async connectDB (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/src/config/database.js:6:18)\n' +
+    '    at async startServer (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/server.js:182:5)',
+  timestamp: '2026-03-27 12:17:50'
+}
+{
+  service: 'nexus-backend',
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000,
+  level: 'error',
+  message: 'Uncaught Exception: listen EADDRINUSE: address already in use :::5000',
+  stack: 'Error: listen EADDRINUSE: address already in use :::5000\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n' +
+    '    at listenInCluster (node:net:1997:12)\n' +
+    '    at Server.listen (node:net:2102:7)\n' +
+    '    at startServer (file:///E:/New%20folder%20(3)/Nexus-main/Nexus-main/backend/server.js:192:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)',
+  timestamp: '2026-03-27 12:20:16'
+}
